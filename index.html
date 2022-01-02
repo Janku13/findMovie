@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV-API</title>
+    <!--icon-->
+    <link rel="icon" type="image/png "href="icon_movie.jpg">
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+    
+    <h1>TV Show Search</h1>
+    <form  id='searchForm'>
+        <input  type="text" placeholder="TV Show Title" name='query'>
+        <button>Search</button>
+    </form>
+    <!-- we use DOM to add the images here-->
+    <ul id ='container'></ul>
+
+
+    <!--Conecting javaScript file and axios file-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
