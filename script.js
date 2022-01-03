@@ -19,13 +19,15 @@ form.addEventListener("submit", async function (e) {
 const makeImages = (shows) => {
   removeImages();
   for (let result of shows) {
-    if (result.show.image) {
+    if (result.show.image && result.show.officialSite) {
       const img = document.createElement("IMG");
       img.src = result.show.image.medium;
 
       const url = result.show.officialSite;
       const block = document.createElement("a");
       block.setAttribute("href", url);
+      block.setAttribute("target", "_blank");
+
       block.appendChild(img);
 
       movieList.append(block);
