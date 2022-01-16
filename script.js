@@ -9,7 +9,7 @@ const movieList = document.querySelector("#container");
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
   const movieName = form.elements.query.value;
-  //conecting to api and getting url and image
+  //conecting to api and getting url and image with axios (no need to .json())
   const res = await axios.get(
     " https://api.tvmaze.com/search/shows?q=" + `${movieName}`
   );
