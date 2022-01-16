@@ -38,3 +38,11 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgb(247, 239, 239);
 }
+
+.product-list {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
